@@ -1,17 +1,20 @@
 [
 	{
 		"id":1,
-		"name":"Barney Poland",
-		"email":"barney@contoso.com"
+		"subject":"Yoga",
+		"Date":"28th November",
+		"Time":"15:00-18:00"
 	},
 	{
-		"id":2,
-		"name":"Lacy Barrera",
-		"email":"lacy@contoso.com"
+		"id":1,
+		"subject":"aerobic",
+		"Date":"24th November",
+		"Time":"11:00-1:00"
 	},
 	{
-		"id":3,
-		"name":"Lora Riggs",
-		"email":"lora@contoso.com"
+		"id":1,
+		"subject":"Dance",
+		"Date":"25th November",
+		"Time":"17:00-19:00"
 	}
 ]
