@@ -1,1 +1,1 @@
-Node.js Contact List API App Sample
+Node.js gym class booking service
