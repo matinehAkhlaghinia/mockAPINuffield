@@ -8,8 +8,24 @@
  var swaggerize = require('swaggerize-express');
  var swaggerUi = require('swaggerize-ui'); // second change
  var path = require('path');
-
+ var Connection = require('tedious').Connection;
  var app = express();
+
+
+
+ var config = {  
+    userName: 'matin',  
+    password: 'A123456*',  
+    server: 'nuffielddb.database.windows.net',    
+    options: {encrypt: true, database: 'nuffield'}  // If you are on Microsoft Azure, you need this
+ };
+   
+ var connection = new Connection(config);  
+ connection.on('connect', function(err) {  
+    // If no error, then good to proceed.  
+        console.log("Connected");  
+ });
+
 
  var server = http.createServer(app); 
 
