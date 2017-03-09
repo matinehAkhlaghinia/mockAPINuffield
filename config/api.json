@@ -27,6 +27,34 @@
 				"deprecated": false
 			}
 		},
+		"/bookClass": {
+			"post": {
+				"tags": ["book_class"],
+				"operationId": "book_class",
+				"consumes": [],
+				"produces": ["application/json",
+				"text/json"],
+				"parameters": [
+				 {
+					"class_name": "string",
+					"class_date": "date",
+					"username": "string"
+				 }
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/book_class"
+							}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		},
 		"/classes/{id}": {
 			"get": {
 				"tags": ["classes"],
@@ -107,17 +135,20 @@
 		"classes": {
 			"type": "object",
 			"properties": {
-				"id": {
+				"ClassId": {
 					"format": "int32",
 					"type": "integer"
 				},
-				"subject": {
+				"ClassName": {
 					"type": "string"
 				},
-				"date": {
+				"classTime": {
+					"type": "time"
+				},
+				"Duration": {
 					"type": "string"
 				},
-				"time": {
+				"classDays": {
 					"type": "string"
 				}
 			}
