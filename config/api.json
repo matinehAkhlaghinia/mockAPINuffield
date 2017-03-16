@@ -38,9 +38,15 @@
 				"produces": ["application/json",
 				"text/json"],
 				"parameters": [
-				 {
-					"class_id": "integer"
-				 }
+					{
+         "in": "body",
+         "name": "body",
+         "description": "",
+         "required": false,
+         "schema": {
+           "$ref": "#/definitions/Classes"
+         }
+       }
 				],
 				"responses": {
 					"200": {
