@@ -38,15 +38,13 @@
 				"produces": ["application/json",
 				"text/json"],
 				"parameters": [
-					{
-         "in": "body",
-         "name": "body",
-         "description": "",
-         "required": false,
-         "schema": {
-           "$ref": "#/definitions/Classes"
-         }
-       }
+				 {
+	         "paramType": "body",
+	         "required": false,
+	         "schema": {
+	           "$ref": "#/definitions/Classes"
+	         }
+	       }
 				],
 				"responses": {
 					"200": {
