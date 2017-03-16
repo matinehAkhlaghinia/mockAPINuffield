@@ -48,7 +48,7 @@
 						"schema": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/book_class"
+								"$ref": "#/definitions/Classes"
 							}
 						}
 					}
