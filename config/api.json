@@ -36,9 +36,7 @@
 				"text/json"],
 				"parameters": [
 				 {
-					"class_name": "string",
-					"class_date": "date",
-					"username": "string"
+					"class_id": "integer"
 				 }
 				],
 				"responses": {
