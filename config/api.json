@@ -31,7 +31,10 @@
 			"post": {
 				"tags": ["book_class"],
 				"operationId": "book_class",
-				"consumes": [],
+				"consumes" : [
+				  "application/json",
+				  "application/xml"
+				],
 				"produces": ["application/json",
 				"text/json"],
 				"parameters": [
